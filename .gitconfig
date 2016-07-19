@@ -4,6 +4,7 @@
 [core]
 	editor = subl -w
 	excludesfile = /Users/lsr/.gitignore_global
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
 	default = matching
 [color]
@@ -21,6 +22,11 @@
 	frag = magenta bold
 	old = red bold
 	new = green bold
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
 [color "status"]
 	added = yellow
 	changed = green
@@ -31,14 +37,19 @@
 	ci = commit
 	cm = commit -m
 	co = checkout
+	cp = cherry-pick
+	delete-local-merged = !zsh -ic git-delete-local-merged
 	df = diff
+	last = log -1 HEAD
 	lg = log -p
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
 	rb = rebase
 	st = status
-	who = shortlog -s --
-	migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
 	sync = !zsh -ic git-sync
-	delete-local-merged = !zsh -ic git-delete-local-merged
+	unstage = reset HEAD --
+	who = shortlog -s --
 [diff]
 	tool = Kaleidoscope
 [difftool]
