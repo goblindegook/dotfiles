@@ -1,0 +1,61 @@
+[user]
+	name = Luis Rodrigues
+	email = goblindegook@users.noreply.github.com
+[core]
+	editor = subl -w
+	excludesfile = /Users/lsr/.gitignore_global
+[push]
+	default = matching
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	tag = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	br = branch
+	cb = checkout -b
+	ci = commit
+	cm = commit -m
+	co = checkout
+	df = diff
+	lg = log -p
+	rb = rebase
+	st = status
+	who = shortlog -s --
+	migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
+	sync = !zsh -ic git-sync
+	delete-local-merged = !zsh -ic git-delete-local-merged
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = Kaleidoscope
+[mergetool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
