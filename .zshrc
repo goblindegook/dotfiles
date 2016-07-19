@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(battery brew composer git git-extras git-flow gulp httpie jump lein node npm osx z)
+plugins=(battery brew brew-cask colored-man-pages colorize composer git git-extras git-flow grunt gulp httpie jsontools jump lein man node npm nvm osx sbt scala screen z)
 
 # User configuration
 
