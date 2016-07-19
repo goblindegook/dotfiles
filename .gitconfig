@@ -4,7 +4,6 @@
 [core]
 	editor = subl -w
 	excludesfile = /Users/lsr/.gitignore_global
-    pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
 	default = matching
 [color]
