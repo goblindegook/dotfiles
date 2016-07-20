@@ -105,4 +105,6 @@ if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 . $LUNCHY_DIR/lunchy-completion.zsh
 fi
 
-# eval $(docker-machine env default)
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
