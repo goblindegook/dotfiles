@@ -1,5 +1,6 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set backspace=2
+set nocompatible
+filetype off
 
 " Pathogen
 execute pathogen#infect()
