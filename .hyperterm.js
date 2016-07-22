@@ -56,7 +56,15 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-spacegray'
+    'hypercwd',
+    // 'hyperline',
+    'hyperterm-1password',
+    // 'hyperterm-base16-ocean-dark',
+    // 'hyperterm-material',
+    'hyperterm-monokai',
+    'hyperterm-split',
+    // 'hyperterm-theme-material-oceanic',
+    'hyperterm-visor',
   ],
 
   // in development, you can create a directory under
