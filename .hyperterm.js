@@ -62,7 +62,7 @@ module.exports = {
     // 'hyperterm-base16-ocean-dark',
     // 'hyperterm-material',
     'hyperterm-monokai',
-    'hyperterm-split',
+    // 'hyperterm-split',
     // 'hyperterm-theme-material-oceanic',
     'hyperterm-visor',
   ],

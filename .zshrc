@@ -1,4 +1,9 @@
+export EDITOR=subl
 export LANG=en_US.UTF-8
+export REACT_EDITOR=subl
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -59,36 +64,44 @@ export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/s
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME
 
+# Android
 if [ -d "~/Library/Android/sdk/platform-tools" ] ; then
   export PATH="~/Library/Android/sdk/platform-tools:$PATH"
 fi
 
+# nvm
 export NVM_DIR=~/.nvm
-export REACT_EDITOR=subl
-export EDITOR=subl
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
+[ -f $ZPLUG_HOME/init.zsh ] && source $ZPLUG_HOME/init.zsh
 zplug "caarlos0/zsh-git-sync"
 
+# oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix nvm)/nvm.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
+
+# iTerm 2
+[ -f $HOME/.iterm2_shell_integration.zsh ] && source ${HOME}/.iterm2_shell_integration.zsh
+
+# Lunchy
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+. $LUNCHY_DIR/lunchy-completion.zsh
+fi
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -98,13 +111,3 @@ HELPDIR=/usr/local/share/zsh/help
 # Example aliases
 # alias zshconfig="subl ~/.zshrc"
 # alias ohmyzsh="subl ~/.oh-my-zsh"
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
-
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-. $LUNCHY_DIR/lunchy-completion.zsh
-fi
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
