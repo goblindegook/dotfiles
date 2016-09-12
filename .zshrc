@@ -91,7 +91,7 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
 # iTerm 2
-[ -f $HOME/.iterm2_shell_integration.zsh ] && source ${HOME}/.iterm2_shell_integration.zsh
+# [ -f $HOME/.iterm2_shell_integration.zsh ] && source ${HOME}/.iterm2_shell_integration.zsh
 
 # Lunchy
 LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
@@ -111,3 +111,8 @@ BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
 # Example aliases
 # alias zshconfig="subl ~/.zshrc"
 # alias ohmyzsh="subl ~/.oh-my-zsh"
+
+alias lla="ls -la"
+
+autoload -U promptinit && promptinit
+prompt pure

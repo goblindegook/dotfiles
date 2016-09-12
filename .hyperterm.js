@@ -58,14 +58,32 @@ module.exports = {
   plugins: [
     'hypercwd',
     'hyperterm-1password',
-    'hyperterm-monokai',
+    'hyperterm-split',
     'hyperterm-subpixel-antialiased',
     'hyperterm-title',
-    'hyperterm-visor'
+    'hyperterm-visor',
+    "hyperterm-snazzy",
+    "hyperterm-overlay"
   ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [],
+
+  overlay: {
+    animate: true,
+    alwaysOnTop: true,
+    hasShadow: true,
+    hideOnBlur: false,
+    hideDock: false,
+    hotkeys: ['Option+Space'],
+    resizable: true,
+    position: 'top',
+    primaryDisplay: false,
+    startup: false,
+    size: 0.5,
+    tray: true,
+    unique: false
+  }
 };
