@@ -58,12 +58,11 @@ module.exports = {
   plugins: [
     'hypercwd',
     'hyperterm-1password',
-    'hyperterm-split',
+    'hyperterm-overlay',
+    'hyperterm-snazzy',
     'hyperterm-subpixel-antialiased',
     'hyperterm-title',
-    'hyperterm-visor',
-    "hyperterm-snazzy",
-    "hyperterm-overlay"
+    'hypertheme'
   ],
 
   // in development, you can create a directory under
