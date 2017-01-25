@@ -114,5 +114,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
 
 alias lla="ls -la"
 
-autoload -U promptinit && promptinit
+autoload -U promptinit; promptinit
 prompt pure

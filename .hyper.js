@@ -57,9 +57,10 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hypercwd',
+    'hyperline',
     'hyperterm-1password',
     'hyperterm-overlay',
-    'hyperterm-snazzy',
+    'hyper-snazzy',
     'hyperterm-subpixel-antialiased',
     'hyperterm-title',
     'hypertheme'
