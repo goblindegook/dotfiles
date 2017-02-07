@@ -4,7 +4,7 @@
 
 [core]
 	editor = subl -w
-	excludesfile = /Users/lsr/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 [push]
 	default = matching
@@ -47,11 +47,13 @@
 	cp = cherry-pick
 	delete-local-merged = !zsh -ic git-delete-local-merged
 	df = diff
+	gone = ls-files -d
 	last = log -1 HEAD
 	lg = log -p
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
+	new = ls-files -o --exclude-standard
 	pom = pull origin master
 	rb = rebase
 	st = status
