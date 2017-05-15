@@ -60,7 +60,7 @@ plugins=(battery brew brew-cask colored-man-pages colorize composer docker docke
 
 # User configuration
 
-export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME
 
