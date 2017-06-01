@@ -56,7 +56,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(battery brew brew-cask colored-man-pages colorize composer docker docker-compose git git-extras git-flow grunt gulp httpie jsontools jump lein man node npm nvm osx sbt scala screen z)
+plugins=(battery brew brew-cask colored-man-pages colorize composer docker docker-compose git git-extras git-flow grunt gulp httpie jsontools jump lein man node npm nvm osx sbt scala screen yarn z)
 
 # User configuration
 
@@ -113,6 +113,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
 # alias ohmyzsh="subl ~/.oh-my-zsh"
 
 alias lla="ls -la"
+alias dockerc="docker-compose"
 
 autoload -U promptinit; promptinit
 prompt pure
