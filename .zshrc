@@ -12,7 +12,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME=""
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,10 +98,6 @@ LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 . $LUNCHY_DIR/lunchy-completion.zsh
 fi
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
