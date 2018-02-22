@@ -1,3 +1,4 @@
+source ~/.profile
 export PATH=~/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
