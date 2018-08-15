@@ -56,13 +56,14 @@ ZSH_THEME=""
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(battery brew brew-cask colored-man-pages colorize composer docker docker-compose git git-extras git-flow grunt gulp httpie jsontools jump lein man node npm nvm osx sbt scala screen yarn z)
+plugins=(battery brew colored-man-pages colorize docker docker-compose git git-extras history-substring-search httpie jsontools jump man node npm nvm osx screen thefuck yarn z)
 
 # User configuration
 
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-export GOPATH=$HOME
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 
 # Android
 if [ -d "~/Library/Android/sdk/platform-tools" ] ; then
