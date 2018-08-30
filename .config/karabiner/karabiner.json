@@ -81,16 +81,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "caps_lock"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        }
-                    ]
+                    "simple_modifications": []
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
@@ -133,16 +124,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "application"
-                            },
-                            "to": {
-                                "key_code": "fn"
-                            }
-                        }
-                    ]
+                    "simple_modifications": []
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
@@ -155,16 +137,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "application"
-                            },
-                            "to": {
-                                "key_code": "fn"
-                            }
-                        }
-                    ]
+                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [
@@ -273,7 +246,7 @@
                         "key_code": "caps_lock"
                     },
                     "to": {
-                        "key_code": "left_control"
+                        "key_code": "fn"
                     }
                 }
             ],
