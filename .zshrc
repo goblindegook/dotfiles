@@ -71,7 +71,9 @@ if [ -d "~/Library/Android/sdk/platform-tools" ] ; then
 fi
 
 # nvm
-export NVM_DIR=~/.nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -83,7 +85,6 @@ zplug "caarlos0/zsh-git-sync"
 
 # oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-source $(brew --prefix nvm)/nvm.sh
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
