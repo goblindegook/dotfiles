@@ -124,3 +124,6 @@ prompt pure
 export PATH="$PATH:$HOME/.rvm/bin"
 
 eval $(thefuck --alias)
+
+export AWS_ACCESS_KEY_ID=valid-for-local-test
+export AWS_SECRET_ACCESS_KEY=valid-for-local-test
