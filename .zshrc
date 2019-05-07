@@ -116,6 +116,7 @@ fi
 
 alias lla="ls -la"
 alias dockerc="docker-compose"
+alias dotfiles="vcsh dotfiles"
 
 autoload -U promptinit; promptinit
 prompt pure
