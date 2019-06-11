@@ -37,7 +37,7 @@ ZSH_THEME=""
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -87,8 +87,8 @@ zplug "caarlos0/zsh-git-sync"
 source $ZSH/oh-my-zsh.sh
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
@@ -117,6 +117,8 @@ fi
 alias lla="ls -la"
 alias dockerc="docker-compose"
 alias dotfiles="vcsh dotfiles"
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 autoload -U promptinit; promptinit
 prompt pure

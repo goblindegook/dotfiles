@@ -5,16 +5,14 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 brew "ack"
-brew "fontconfig"
-brew "gettext"
-brew "python"
-brew "icu4c"
 brew "apr-util"
 brew "libtool"
 brew "asdf"
+brew "python"
 brew "awscli"
 brew "bash"
 brew "bat"
+brew "icu4c"
 brew "boost"
 brew "brew-cask-completion"
 brew "bundler-completion"
@@ -31,14 +29,15 @@ brew "dos2unix"
 brew "elixir"
 brew "elm"
 brew "elm-format"
+brew "fontconfig"
 brew "fzf"
 brew "gd"
 brew "gem-completion"
+brew "gettext"
 brew "git"
 brew "git-flow"
 brew "gnupg"
 brew "go"
-brew "pkg-config"
 brew "gradle"
 brew "graphicsmagick"
 brew "graphviz"
@@ -47,6 +46,7 @@ brew "htop"
 brew "httpie"
 brew "hugo"
 brew "imagemagick"
+brew "jo"
 brew "oniguruma"
 brew "jq"
 brew "jupyter"
@@ -68,6 +68,7 @@ brew "open-completion"
 brew "php"
 brew "php-code-sniffer"
 brew "pip-completion"
+brew "pkg-config"
 brew "plantuml"
 brew "proselint"
 brew "pwgen"
@@ -106,21 +107,25 @@ cask "android-file-transfer"
 cask "android-sdk"
 cask "authy-desktop"
 cask "bricklink-studio"
+cask "cisco-proximity"
 cask "discord"
 cask "etcher"
 cask "firefox"
 cask "firefoxdeveloperedition"
-cask "font-alegreya-sans"
 cask "font-alegreya"
+cask "font-alegreya-sans"
+cask "font-eb-garamond"
 cask "font-et-book"
 cask "font-fira-code"
 cask "font-monoid"
 cask "font-source-code-pro"
 cask "fork"
 cask "gas-mask"
+cask "gb-studio"
 cask "google-chrome"
 cask "google-photos-backup-and-sync"
 cask "graphiql"
+cask "graphql-playground"
 cask "haskell-platform"
 cask "hedgewars"
 cask "hyper"
@@ -142,9 +147,11 @@ cask "microsoft-office-2011"
 cask "minecraft"
 cask "minikube"
 cask "notable"
+cask "now"
 cask "numi"
 cask "nvalt"
 cask "obs"
+cask "openttd"
 cask "opera"
 cask "origami"
 cask "polar-bookshelf"
@@ -155,12 +162,13 @@ cask "qlmarkdown"
 cask "qlprettypatch"
 cask "quicklook-json"
 cask "robo-3t"
+cask "scapple"
 cask "scrivener"
 cask "sequel-pro"
 cask "shotcut"
 cask "signal"
-cask "sketch-toolbox"
 cask "sketch"
+cask "sketch-toolbox"
 cask "slack"
 cask "spectacle"
 cask "spotify"
@@ -178,28 +186,31 @@ cask "vnc-viewer"
 cask "whatsapp"
 cask "xmind-zen"
 cask "zoomus"
-mas "com.amazon.Kindle", id: 405399194
-mas "com.apple.dt.Xcode", id: 497799835
-mas "com.apple.iMovieApp", id: 408981434
-mas "com.apple.iWork.Keynote", id: 409183694
-mas "com.apple.iWork.Pages", id: 409201541
-mas "com.atlassian.trello", id: 1278508951
-mas "com.binarynights.ForkLift2", id: 412448059
-mas "com.clapsol.scida", id: 580917209
-mas "com.crowdcafe.windowmagnet", id: 441258766
-mas "com.if.Amphetamine", id: 937984704
-mas "com.junecloud.mac.Deliveries", id: 924726344
-mas "com.kryolokovlin.Noizio", id: 928871589
-mas "com.metaclassy.byword", id: 420212497
-mas "com.mizage.Divvy", id: 413857545
-mas "com.pixelmatorteam.pixelmator", id: 407963104
-mas "com.readitlater.PocketMac", id: 568494494
-mas "com.reederapp.rkit2.mac", id: 880001334
-mas "com.skillbrains.lightshot", id: 526298438
-mas "com.soulmen.ulysses3", id: 623795237
-mas "com.todoist.mac.Todoist", id: 585829637
-mas "com.twitter.twitter-mac", id: 409789998
-mas "com.unsplash.Wallpapers", id: 1284863847
-mas "cx.c3.theunarchiver", id: 425424353
-mas "de.APPenzeller.PiPifier", id: 1160374471
-mas "pro.writer.mac", id: 775737590
+mas "Amphetamine", id: 937984704
+mas "Byword", id: 420212497
+mas "Deliveries", id: 924726344
+mas "Divvy", id: 413857545
+mas "ForkLift", id: 412448059
+mas "iA Writer", id: 775737590
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Lightshot Screenshot", id: 526298438
+mas "Magnet", id: 441258766
+mas "Microsoft Remote Desktop", id: 715768417
+mas "NewsGuard", id: 1438657064
+mas "Noizio", id: 928871589
+mas "Pages", id: 409201541
+mas "PiPifier", id: 1160374471
+mas "Pixelmator", id: 407963104
+mas "Pocket", id: 568494494
+mas "Reeder", id: 880001334
+mas "Scida", id: 580917209
+mas "The Unarchiver", id: 425424353
+mas "Todoist", id: 585829637
+mas "Trello", id: 1278508951
+mas "Twitter", id: 409789998
+mas "Ulysses", id: 623795237
+mas "Ulysses", id: 1225570693
+mas "Unsplash Wallpapers", id: 1284863847
+mas "Xcode", id: 497799835

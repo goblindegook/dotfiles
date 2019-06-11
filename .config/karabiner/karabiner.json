@@ -154,6 +154,36 @@
                     "simple_modifications": [
                         {
                             "from": {
+                                "key_code": "page_down"
+                            },
+                            "to": {
+                                "key_code": "right_arrow"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "page_up"
+                            },
+                            "to": {
+                                "key_code": "left_arrow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 2003,
+                        "vendor_id": 4168
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": [
+                        {
+                            "from": {
                                 "key_code": "page_up"
                             },
                             "to": {
@@ -300,7 +330,8 @@
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
                 "country_code": 0,
-                "keyboard_type": "iso"
+                "keyboard_type": "iso",
+                "mouse_key_xy_scale": 100
             }
         }
     ]
