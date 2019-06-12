@@ -117,6 +117,12 @@ cask "font-alegreya-sans"
 cask "font-eb-garamond"
 cask "font-et-book"
 cask "font-fira-code"
+cask "font-hack"
+cask "font-ia-writer-duo"
+cask "font-ia-writer-duospace"
+cask "font-ia-writer-mono"
+cask "font-ia-writer-quattro"
+cask "font-ibm-plex"
 cask "font-monoid"
 cask "font-source-code-pro"
 cask "fork"
@@ -210,7 +216,6 @@ mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
 mas "Trello", id: 1278508951
 mas "Twitter", id: 409789998
-mas "Ulysses", id: 623795237
 mas "Ulysses", id: 1225570693
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
