@@ -34,8 +34,8 @@ brew "gd"
 brew "gem-completion"
 brew "gettext"
 brew "git-flow"
-brew "git"
 brew "git-lfs"
+brew "git"
 brew "go"
 brew "gradle"
 brew "graphicsmagick"
@@ -131,6 +131,7 @@ cask "font-ia-writer-duospace"
 cask "font-ia-writer-mono"
 cask "font-ia-writer-quattro"
 cask "font-ibm-plex"
+cask "font-iosevka"
 cask "font-lora"
 cask "font-monoid"
 cask "font-montserrat"
@@ -177,7 +178,6 @@ cask "openemu"
 cask "openmw"
 cask "openttd"
 cask "opera"
-cask "origami"
 cask "polar-bookshelf"
 cask "postbox"
 cask "postman"
@@ -201,9 +201,11 @@ cask "stremio"
 cask "sublime-text"
 cask "synthesia"
 cask "telegram"
+cask "terminus"
 cask "tripmode"
 cask "typora"
 cask "vanilla"
+cask "videostream"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
@@ -213,8 +215,10 @@ cask "xmind-zen"
 cask "zoomus"
 mas "Amphetamine", id: 937984704
 mas "Byword", id: 420212497
+mas "Decked Builder", id: 406479348
 mas "Deliveries", id: 924726344
-mas "Divvy", id: 413857545
+mas "Fantastical", id: 435003921
+mas "FoldingText", id: 540003654
 mas "ForkLift", id: 412448059
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
@@ -222,8 +226,6 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "Lightshot Screenshot", id: 526298438
 mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 715768417
-mas "NewsGuard", id: 1438657064
 mas "Noizio", id: 928871589
 mas "Pages", id: 409201541
 mas "PiPifier", id: 1160374471
@@ -231,8 +233,12 @@ mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 880001334
 mas "Scida", id: 580917209
+mas "Soulver", id: 413965349
+mas "The Archive Browser", id: 510232205
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
+mas "Tonebridge Guitar Effects", id: 1263858588
+mas "Transmit", id: 403388562
 mas "Trello", id: 1278508951
 mas "Twitter", id: 409789998
 mas "Ulysses", id: 1225570693
