@@ -60,7 +60,7 @@ plugins=(battery brew colored-man-pages colorize docker docker-compose git git-e
 
 # User configuration
 
-export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
