@@ -210,7 +210,6 @@ mas "Magnet", id: 441258766
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft Remote Desktop", id: 715768417
 mas "Microsoft To-Do", id: 1274495053
-mas "NewsGuard", id: 1438657064
 mas "Noizio", id: 928871589
 mas "Pages", id: 409201541
 mas "PiPifier", id: 1160374471
@@ -222,7 +221,7 @@ mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
 mas "Trello", id: 1278508951
 mas "Twitter", id: 409789998
-mas "Ulysses", id: 1225570693
 mas "Ulysses", id: 623795237
+mas "Ulysses", id: 1225570693
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
