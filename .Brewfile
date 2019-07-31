@@ -10,7 +10,6 @@ brew "asdf"
 brew "awscli"
 brew "bash"
 brew "bat"
-brew "boost"
 brew "brew-cask-completion"
 brew "bundler-completion"
 brew "candid82/brew/joker"
@@ -112,19 +111,16 @@ cask "1password"
 cask "aerial"
 cask "airfoil"
 cask "alfred"
-cask "android-file-transfer"
 cask "android-sdk"
 cask "authy-desktop"
 cask "battle-net"
 cask "bricklink-studio"
-cask "cisco-proximity"
+cask "calibre"
 cask "discord"
 cask "docker"
 cask "dropbox"
 cask "eloston-chromium"
-cask "etcher"
 cask "firefox"
-cask "firefoxdeveloperedition"
 cask "font-alegreya-sans"
 cask "font-alegreya"
 cask "font-charter"
@@ -147,10 +143,10 @@ cask "gas-mask"
 cask "gb-studio"
 cask "gog-galaxy"
 cask "google-chrome"
+cask "google-featured-photos"
 cask "google-photos-backup-and-sync"
 cask "graphiql"
 cask "graphql-playground"
-cask "haskell-platform"
 cask "hedgewars"
 cask "hyper"
 cask "iina"
@@ -161,7 +157,6 @@ cask "java"
 cask "kaleidoscope"
 cask "kap"
 cask "karabiner-elements"
-cask "keybase"
 cask "kitematic"
 cask "libreoffice"
 cask "little-snitch"
@@ -195,25 +190,19 @@ cask "shotcut"
 cask "signal"
 cask "sketch-toolbox"
 cask "sketch"
-cask "slack"
 cask "spotify"
 cask "steam"
 cask "stremio"
 cask "sublime-text"
 cask "synthesia"
 cask "telegram"
-cask "terminus"
 cask "tripmode"
 cask "typora"
 cask "vanilla"
 cask "videostream"
-cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
-cask "vnc-viewer"
 cask "whatsapp"
-cask "xmind-zen"
-cask "zoomus"
 mas "Amphetamine", id: 937984704
 mas "Byword", id: 420212497
 mas "Dato", id: 1470584107
@@ -227,7 +216,6 @@ mas "Kindle", id: 405399194
 mas "Lightshot Screenshot", id: 526298438
 mas "Magnet", id: 441258766
 mas "Microsoft Outlook", id: 985367838
-mas "Microsoft Remote Desktop", id: 715768417
 mas "Microsoft To-Do", id: 1274495053
 mas "Noizio", id: 928871589
 mas "Pages", id: 409201541
@@ -240,7 +228,5 @@ mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
 mas "Trello", id: 1278508951
 mas "Twitter", id: 409789998
-mas "Ulysses", id: 623795237
-mas "Ulysses", id: 1225570693
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
