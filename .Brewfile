@@ -215,7 +215,6 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "Lightshot Screenshot", id: 526298438
 mas "Magnet", id: 441258766
-mas "Microsoft Outlook", id: 985367838
 mas "Microsoft To-Do", id: 1274495053
 mas "Noizio", id: 928871589
 mas "Pages", id: 409201541
