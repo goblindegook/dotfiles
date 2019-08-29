@@ -50,11 +50,6 @@ export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.cargo/bin:$HOME/.local/bin
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
-# Android
-if [ -d "~/Library/Android/sdk/platform-tools" ] ; then
-  export PATH="~/Library/Android/sdk/platform-tools:$PATH"
-fi
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
@@ -78,6 +73,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
 zplug "plugins/z", from:oh-my-zsh
+zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
