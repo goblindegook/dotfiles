@@ -73,6 +73,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
 zplug "plugins/z", from:oh-my-zsh
+zplug "supercrabtree/k"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
