@@ -68,7 +68,6 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 [ -f $ZPLUG_HOME/init.zsh ] && source $ZPLUG_HOME/init.zsh
 
 zplug "caarlos0/zsh-git-sync"
-zplug "plugins/brew", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
