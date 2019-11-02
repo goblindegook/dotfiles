@@ -74,6 +74,7 @@ zplug "plugins/yarn", from:oh-my-zsh
 zplug "plugins/z", from:oh-my-zsh
 zplug "supercrabtree/k"
 zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
@@ -86,6 +87,8 @@ zplug load
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
