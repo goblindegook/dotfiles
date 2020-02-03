@@ -115,3 +115,4 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 eval $(thefuck --alias)
+source /Users/lrodrigues/Library/Preferences/org.dystroy.broot/launcher/bash/br
