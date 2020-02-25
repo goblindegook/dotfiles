@@ -40,6 +40,10 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=10000
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -115,4 +119,4 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 eval $(thefuck --alias)
-source /Users/lrodrigues/Library/Preferences/org.dystroy.broot/launcher/bash/br
+source "$HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br"
