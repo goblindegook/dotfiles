@@ -49,7 +49,7 @@ SAVEHIST=10000
 
 # User configuration
 
-export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.composer/vendor/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
