@@ -73,4 +73,4 @@ alias la="ls -la"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-source /Users/lrodrigues/Library/Preferences/org.dystroy.broot/launcher/bash/br
+source "$HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br"
