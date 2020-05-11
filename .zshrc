@@ -54,10 +54,6 @@ export PATH="/usr/local/opt/php@7.2/bin:$HOME/bin:$HOME/.opam/default/bin:$HOME/
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
-# jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
