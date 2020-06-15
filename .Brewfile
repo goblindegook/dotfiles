@@ -149,19 +149,15 @@ cask "hedgewars"
 cask "iina"
 cask "insomnia"
 cask "intellij-idea"
+cask "itch"
 cask "iterm2-beta"
 cask "kaleidoscope"
-cask "kap"
 cask "karabiner-elements"
 cask "kitematic"
 cask "libreoffice"
 cask "little-snitch"
-cask "mamp"
-cask "marked"
 cask "micro-snitch"
 cask "minecraft"
-cask "minikube"
-cask "netnewswire"
 cask "notable"
 cask "now"
 cask "numi"
@@ -206,7 +202,6 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "Lightshot Screenshot", id: 526298438
-mas "Magnet", id: 441258766
 mas "Noizio", id: 928871589
 mas "Pages", id: 409201541
 mas "PiPifier", id: 1160374471
@@ -217,6 +212,5 @@ mas "Scida", id: 580917209
 mas "The Unarchiver", id: 425424353
 mas "TickTick", id: 966085870
 mas "Trello", id: 1278508951
-mas "Twitter", id: 409789998
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
