@@ -4,10 +4,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-brew "ack"
 brew "apr-util"
 brew "asdf"
-brew "awscli"
 brew "bash"
 brew "bat"
 brew "boost"
@@ -32,7 +30,6 @@ brew "fzf"
 brew "gd"
 brew "gem-completion"
 brew "gettext"
-brew "git-flow"
 brew "git"
 brew "gnupg"
 brew "go"
@@ -111,7 +108,6 @@ cask "battle-net"
 cask "bricklink-studio"
 cask "calibre"
 cask "discord"
-cask "docker"
 cask "dropbox"
 cask "epic-games"
 cask "firefox"
@@ -150,7 +146,6 @@ cask "itch"
 cask "iterm2-beta"
 cask "kaleidoscope"
 cask "karabiner-elements"
-cask "kitematic"
 cask "libreoffice"
 cask "little-snitch"
 cask "micro-snitch"
@@ -192,7 +187,6 @@ mas "1Blocker", id: 1107421413
 mas "Amphetamine", id: 937984704
 mas "Byword", id: 420212497
 mas "Deliveries", id: 924726344
-mas "Dynamo", id: 1445910651
 mas "ForkLift", id: 412448059
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
