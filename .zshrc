@@ -121,3 +121,5 @@ export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
 
 eval "$(jenv init -)"
+
+[ -f ~/.work.zsh ] && source ~/.work.zsh
