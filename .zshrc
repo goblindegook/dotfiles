@@ -54,11 +54,6 @@ export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.cargo/bin:$HOME/.local/bin
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
-
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
@@ -121,5 +116,6 @@ export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
 
 eval "$(jenv init -)"
+eval "$(nodenv init -)"
 
 [ -f ~/.work.zsh ] && source ~/.work.zsh
