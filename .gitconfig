@@ -1,15 +1,23 @@
 [user]
 	name = Luis Rodrigues
-	email = goblindegook@users.noreply.github.com
+	email = luis.rodrigues@springernature.com
 
 [core]
 	editor = subl -w
 	excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=1,5 -RFX
+	pager = delta
 
-[pager]
-	diff = diff-so-fancy | less --tabs=1,5 -RFX
-	show = diff-so-fancy | less --tabs=1,5 -RFX
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
 
 [push]
 	default = matching

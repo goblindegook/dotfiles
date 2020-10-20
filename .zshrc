@@ -119,3 +119,5 @@ eval "$(jenv init -)"
 eval "$(nodenv init -)"
 
 [ -f ~/.work.zsh ] && source ~/.work.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
