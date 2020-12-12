@@ -166,6 +166,7 @@ cask "qlprettypatch"
 cask "rectangle"
 cask "scapple"
 cask "scrivener"
+cask "sequel-ace"
 cask "shotcut"
 cask "signal"
 cask "sketch-toolbox"
@@ -194,7 +195,6 @@ mas "Lightshot Screenshot", id: 526298438
 mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
-mas "Sequel Ace", id: 1518036000
 mas "The Unarchiver", id: 425424353
 mas "TickTick", id: 966085870
 mas "Trello", id: 1278508951

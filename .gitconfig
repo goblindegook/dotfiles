@@ -6,6 +6,7 @@
 	editor = subl -w
 	excludesfile = ~/.gitignore_global
 	pager = delta
+	autocrlf = input
 
 [interactive]
     diffFilter = delta --color-only
