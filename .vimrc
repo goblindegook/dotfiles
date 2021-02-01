@@ -7,10 +7,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" Base16
-let base16colorspace=256
-colorscheme base16-default-dark
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
