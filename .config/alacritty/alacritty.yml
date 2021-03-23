@@ -1,0 +1,17 @@
+env:
+  TERM: xterm-256color
+
+window:
+  decorations: full
+
+font:
+  normal:
+    family: "Jetbrains Mono"
+  bold:
+    family: "Jetbrains Mono"
+  italic:
+    family: "Jetbrains Mono"
+  size: 12.0
+  use_thin_strokes: true
+
+background_opacity: 1.0
