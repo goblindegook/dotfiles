@@ -2,6 +2,10 @@ export EDITOR=subl
 export LANG=en_US.UTF-8
 export REACT_EDITOR=subl
 
+if [[ -z $HOMEBREW_PREFIX ]]; then
+  HOMEBREW_PREFIX="/usr/local"
+fi
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -49,7 +53,7 @@ SAVEHIST=10000
 
 # User configuration
 
-export PATH="$HOME/bin:$HOME/.opam/default/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.composer/vendor/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOMEBREW_PREFIX/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
@@ -63,7 +67,7 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 # zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 [ -f $ZPLUG_HOME/init.zsh ] && source $ZPLUG_HOME/init.zsh
 
 zplug "caarlos0/zsh-git-sync"
@@ -86,9 +90,9 @@ zplug load
 
 unalias run-help
 autoload run-help
-HELPDIR=/usr/local/share/zsh/help
+HELPDIR=$HOMEBREW_PREFIX/share/zsh/help
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=($HOMEBREW_PREFIX/share/zsh-completions $fpath)
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -111,9 +115,16 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 eval $(thefuck --alias)
 
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/php@7.2/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/php@7.2/sbin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.opam/default/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
