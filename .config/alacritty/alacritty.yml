@@ -11,7 +11,7 @@ font:
     family: "Jetbrains Mono"
   italic:
     family: "Jetbrains Mono"
-  size: 12.0
+  size: 13.0
   use_thin_strokes: true
 
 background_opacity: 1.0

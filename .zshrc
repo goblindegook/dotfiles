@@ -55,6 +55,12 @@ SAVEHIST=10000
 
 export PATH="$HOMEBREW_PREFIX/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export CFLAGS="-I$(brew --prefix openssl)/include"
+export LDFLAGS="-L$(brew --prefix openssl)/lib"
+export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
+export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
+
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
@@ -128,6 +134,8 @@ export PATH="$HOME/bin:$PATH"
 
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 [ -f ~/.work.zsh ] && source ~/.work.zsh
 
