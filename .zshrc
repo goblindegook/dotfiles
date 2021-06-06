@@ -53,7 +53,7 @@ SAVEHIST=10000
 
 # User configuration
 
-export PATH="$HOMEBREW_PREFIX/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOMEBREW_PREFIX/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export CFLAGS="-I$(brew --prefix openssl)/include"
