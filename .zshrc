@@ -116,9 +116,6 @@ alias lla="ls -la"
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 eval $(thefuck --alias)
 
 export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
@@ -132,10 +129,11 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.opam/default/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 [ -f ~/.work.zsh ] && source ~/.work.zsh
 
