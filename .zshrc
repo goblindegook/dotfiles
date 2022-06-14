@@ -53,7 +53,9 @@ export PATH="$(brew --prefix)/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/bin:/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export CFLAGS="-I$(brew --prefix openssl)/include"
-export LDFLAGS="-L$(brew --prefix openssl)/lib"
+export CPPFLAGS="-I$(brew --prefix zlib)/include"
+export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix zlib)/lib"
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
 
@@ -127,9 +129,16 @@ export PATH="$HOME/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
+eval "$(pyenv init --path)"
+eval "$(mcfly init zsh)"
+eval "$(direnv hook zsh)"
+
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 . $(brew --prefix asdf)/libexec/asdf.sh
 
