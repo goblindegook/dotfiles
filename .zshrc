@@ -54,7 +54,7 @@ export PATH="$(brew --prefix)/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/bin:/
 
 export CFLAGS="-I$(brew --prefix openssl)/include"
 export CPPFLAGS="-I$(brew --prefix zlib)/include"
-export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix zlib)/lib"
+export LDFLAGS="-L$(brew --prefix gettext)/lib -L$(brew --prefix openssl)/lib -L$(brew --prefix zlib)/lib"
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
@@ -133,7 +133,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(jenv init -)"
-eval "$(nodenv init -)"
+# eval "$(nodenv init -)"
 eval "$(pyenv init --path)"
 eval "$(mcfly init zsh)"
 eval "$(direnv hook zsh)"

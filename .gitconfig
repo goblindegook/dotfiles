@@ -76,20 +76,33 @@
 	who = shortlog -s --
 
 [diff]
-	tool = Kaleidoscope
+	tool = p4merge
 
 [difftool]
 	prompt = false
+
+[difftool "p4merge"]
+	path = /Applications/p4merge.app/Contents/MacOS/p4merge
+
+[difftool "opendiff"]
+	cmd = opendiff "$LOCAL" "$REMOTE"
 
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-	tool = Kaleidoscope
+	tool = p4merge
 	conflictstyle = diff3
 
 [mergetool]
-	prompt = false
+	prompt = true
+
+[mergetool "p4merge"]
+	path = /Applications/p4merge.app/Contents/MacOS/p4merge
+
+[mergetool "opendiff"]
+	cmd = opendiff -merge "$MERGED" "$LOCAL" "$REMOTE"
+	trustexitcode = true
 
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
