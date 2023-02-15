@@ -117,9 +117,10 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 eval $(thefuck --alias)
 
 export PATH="$(brew --prefix asdf)/bin:$PATH"
-export PATH="$(brew --prefix php@7.2)/bin:$PATH"
-export PATH="$(brew --prefix php@7.2)/sbin:$PATH"
+export PATH="$(brew --prefix php)/bin:$PATH"
+export PATH="$(brew --prefix php)/sbin:$PATH"
 
+export PATH="$GOBIN:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
@@ -133,7 +134,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(jenv init -)"
-# eval "$(nodenv init -)"
 eval "$(pyenv init --path)"
 eval "$(mcfly init zsh)"
 eval "$(direnv hook zsh)"
@@ -145,3 +145,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 [ -f ~/.work.zsh ] && source ~/.work.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
