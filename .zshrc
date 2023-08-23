@@ -52,12 +52,13 @@ SAVEHIST=10000
 export PATH="$(brew --prefix)/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export CFLAGS="-I$(brew --prefix openssl)/include"
+export CFLAGS="-I$(brew --prefix openssl)/include -O2"
 export CPPFLAGS="-I$(brew --prefix zlib)/include"
 export LDFLAGS="-L$(brew --prefix gettext)/lib -L$(brew --prefix openssl)/lib -L$(brew --prefix zlib)/lib"
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
+export GPG_TTY=$(tty)
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
@@ -143,6 +144,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 . $(brew --prefix asdf)/libexec/asdf.sh
 
 [ -f ~/.work.zsh ] && source ~/.work.zsh
+[ -f ~/.env.zsh ] && source ~/.env.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"

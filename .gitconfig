@@ -1,6 +1,7 @@
 [user]
 	name = Luis Rodrigues
 	email = lrodrigues@newstore.com
+	signingkey = 04D2BBEDE3BFD9C3
 
 [core]
 	editor = subl -w
@@ -76,7 +77,7 @@
 	who = shortlog -s --
 
 [diff]
-	tool = p4merge
+	tool = juxta
 
 [difftool]
 	prompt = false
@@ -91,7 +92,7 @@
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-	tool = p4merge
+	tool = juxta
 	conflictstyle = diff3
 
 [mergetool]
@@ -119,3 +120,11 @@
 
 [rebase]
 	autoStash = true
+[init]
+	defaultBranch = main
+[mergetool "juxta"]
+	cmd = juxta _mergetool --base \"$BASE\" --local \"$LOCAL\" --remote \"$REMOTE\" --merged \"$MERGED\"
+	trustExitCode = true
+[difftool "juxta"]
+	cmd = juxta _difftool --base \"$BASE\" --local \"$LOCAL\" --remote \"$REMOTE\" --merged \"$MERGED\"
+	trustExitCode = true
