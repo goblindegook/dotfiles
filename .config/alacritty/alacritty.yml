@@ -8,11 +8,11 @@ window:
 
 font:
   normal:
-    family: "JetbrainsMonoNL Nerd Font"
+    family: "JetbrainsMonoNL NF"
   bold:
-    family: "JetbrainsMonoNL Nerd Font"
+    family: "JetbrainsMonoNL NF"
   italic:
-    family: "JetbrainsMonoNL Nerd Font"
+    family: "JetbrainsMonoNL NF"
   offset:
     y: 1
   size: 13.0

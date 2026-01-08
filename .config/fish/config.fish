@@ -29,3 +29,7 @@ set fish_plugins theme balias brew composer gem msg jump pbcopy percol osx vundl
 . $fish_path/oh-my-fish.fish
 
 nvm use default
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/lrodrigues/.lmstudio/bin
+# End of LM Studio CLI section
+

@@ -72,3 +72,8 @@ alias la="ls -la"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/lrodrigues/.lmstudio/bin"
+# End of LM Studio CLI section
+

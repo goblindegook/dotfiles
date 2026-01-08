@@ -49,11 +49,11 @@ SAVEHIST=10000
 
 # User configuration
 
-export PATH="$(brew --prefix)/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin"
+export PATH="$(brew --prefix)/bin:$(brew --prefix)/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export CFLAGS="-I$(brew --prefix openssl)/include -O2"
-export CPPFLAGS="-I$(brew --prefix zlib)/include"
+export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix openjdk)/include"
 export LDFLAGS="-L$(brew --prefix gettext)/lib -L$(brew --prefix openssl)/lib -L$(brew --prefix zlib)/lib"
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
@@ -62,6 +62,9 @@ export GPG_TTY=$(tty)
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
+
+# export GOFLAGS="-gcflags=all=-N -l"
+# export CGO_CFLAGS=-Wno-undef-prefix
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -85,6 +88,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "reegnz/jq-zsh-plugin"
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 if ! zplug check; then
@@ -93,11 +97,10 @@ fi
 
 zplug load
 
+fpath=($(brew --prefix)/share/zsh-completions $fpath)
 unalias run-help
 autoload run-help
 HELPDIR=$(brew --prefix)/share/zsh/help
-
-fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -117,11 +120,12 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 eval $(thefuck --alias)
 
-export PATH="$(brew --prefix asdf)/bin:$PATH"
+# export PATH="$(brew --prefix asdf)/bin:$PATH"
 export PATH="$(brew --prefix php)/bin:$PATH"
 export PATH="$(brew --prefix php)/sbin:$PATH"
 
 export PATH="$GOBIN:$PATH"
+export PATH="$(brew --prefix openjdk)/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
@@ -131,19 +135,33 @@ export PATH="$HOME/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(jenv init -)"
 eval "$(pyenv init --path)"
 eval "$(mcfly init zsh)"
-eval "$(direnv hook zsh)"
+eval "$(mise activate)"
+eval "$(direnv hook ${SHELL})"
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-. $(brew --prefix asdf)/libexec/asdf.sh
+# . $(brew --prefix asdf)/libexec/asdf.sh
+
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+export SAM_CLI_TELEMETRY=0
 
 [ -f ~/.work.zsh ] && source ~/.work.zsh
 [ -f ~/.env.zsh ] && source ~/.env.zsh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/lrodrigues/.lmstudio/bin"
+# End of LM Studio CLI section
+
