@@ -129,7 +129,4 @@
 	cmd = juxta _difftool --base \"$BASE\" --local \"$LOCAL\" --remote \"$REMOTE\" --merged \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/lrodrigues/.gitmessage
-[git-mob]
-	co-author = Luís Soares <lsoares@newstore.com>
-	co-author = Robert Hoch <rhoch@newstore.com>
+	template = ~/.gitmessage
